@@ -1,0 +1,45 @@
+.socials{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2em;
+    padding-top: 5em;
+    a{
+        margin-right:40px;
+    }
+    i{
+        font-size: 4em;
+        color: white;
+        background-color: $color1;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin: 5px;
+        &:hover{
+            color: $color1;
+            background-color: $color2;
+            border: 1px solid $color1;
+            transition: 0.5s ease;
+        }
+    }
+
+    @media (max-width: 768px){
+        a{
+            margin-right: 25px;
+        }
+        i{
+            font-size: 2.2em;
+        }
+    }
+    
+    
+
+    @media (max-width: 425px) {
+        padding-left: 5vw;
+        a{
+            margin-right:15px;
+        }
+        i{
+            font-size: 1.5rem;
+        }
+    }
+}
